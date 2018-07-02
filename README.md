@@ -1,3 +1,5 @@
+Hi! 
+
 # Sinatra Content Management System App
 
 ## Overview
