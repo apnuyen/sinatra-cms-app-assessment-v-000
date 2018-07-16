@@ -1,0 +1,11 @@
+Welcome, <%=@user.username%>! 
+
+<h2>Your Meals Logged</h2>
+
+<%Meal.all.each do |m| %> 
+	<p><%=@user.username%>DISPLAYS CONTENT OF EACH MEAL HERE</p>
+<% end %> 
+
+<p><a href="/meals/new">Log another meal.</a></p>
+
+<p><a href="/logout">Log out of your account.</a></p>

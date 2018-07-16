@@ -1,0 +1,29 @@
+<h1>Edit a meal:</h1>
+
+<% if flash.has?(:message) %> 
+	<%= flash[:message] %> 
+<% end %> 
+
+<form action="/meals/<%@meal.id%>" method="post">
+	<input type="hidden" name="_method" value="patch">
+	<label>Date:</label>
+	<input type="date" name="date" value="<%=@meal.date%>">
+
+	<label>Meal Type:</label>
+	<input type="text" name="mealtype" value="<%=@meal.mealtype%>">
+
+	<label>Item 1:</label>
+	<input type="text" name="item1" value="<%=@meal.item1%>">
+
+	<label>Item 2:</label>
+	<input type="text" name="item2" value="<%=@meal.item2%>">
+
+	<label>Item 3:</label>
+	<input type="text" name="item3" value="<%=@meal.item3%>">
+
+	<label>Beverages:</label>
+	<input type="text" name="beverages" value="<%=@meal.beverages%>">
+
+	<input type="submit" value="submit">
+
+</form>

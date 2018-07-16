@@ -1,0 +1,8 @@
+display content from the entire meal table 
+
+<p><a href="/meals/edit">Edit Meal</a></p>
+
+<form action="/meals/<%=@meal.id%>/delete" method="post">
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" value="Delete Meal ">
+</form>
